@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.imagemapster.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js" charset="UTF-8"></script>
+    <script>
+        $(document).ready(function(){
+            $("#FHead").click(function(){
+              $("#peopleimage").hide();
+              $("#bigFHead").show();
+              $("#backbutton").show();
+          });
+            $("#backbutton").click(function(){
+                $("#peopleimage").show();
+                $("#bigFHead").hide();
+                $("#backbutton").hide();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div>  
+        <img id="bigFHead" style="display:none" src="https://scontent.ftpe2-1.fna.fbcdn.net/v/t1.15752-9/77332048_997310030623385_2866193845995962368_n.jpg?_nc_cat=107&_nc_oc=AQnJV1w7sACwgQDVZDV5oa__zBWGibilwAvuu4LigXrPa4x57HHpb4RusKVkPzyferg&_nc_ht=scontent.ftpe2-1.fna&oh=666f660e53c9dc1b989988cfc34f1de4&oe=5E8C67C4"  border="3" width="500" height="500" >
+
+        <img id="peopleimage"  src="https://scontent.ftpe2-1.fna.fbcdn.net/v/t1.15752-9/76963817_406253146995763_646154374866796544_n.jpg?_nc_cat=103&_nc_oc=AQmAVLmqhkQ2qu4zO3Q1TGmOG2EvPcMOxD80sfDX9NEfrFGq2CkGNIovqonJTn2BkOI&_nc_ht=scontent.ftpe2-1.fna&oh=80437b83db0c173454e35ba212131dea&oe=5E516CB1" usemap="#image-map" border="3" width="500" height="500">
+    </div>
+    <div>
+        <button id="backbutton"> 返回 </button>
+    </div>
+
+
+    <map name="image-map">
+        <area target="" alt="FHead" title="FHead" id="FHead" coords="123,49,26" shape="circle" >
+        <area target="" alt="FNeck" title="FNeck" id="FNeck" coords="107,76,140,90" shape="rect">
+        <area target="" alt="FBody" title="FBody" id="FBody" coords="83,91,157,91,146,155,153,188,87,187,94,151" shape="poly">
+        <area target="" alt="FInguinal" title="FInguinal" id="FInguinal" coords="87,188,153,189,157,221,83,220" shape="poly">
+        <area target="" alt="FFeet" title="FFeet" id="FFeet" coords="83,221,86,276,82,306,84,346,75,375,94,382,145,381,165,375,155,332,158,291,154,267,157,222" shape="poly">
+        <area target="" alt="FLefthand" title="FLefthand" id="FLefthand" coords="82,92,70,119,72,151,64,178,60,199,43,217,54,239,66,232,69,202,80,158,90,133" shape="poly">
+        <area target="" alt="FRighthand" title="FRighthand" id="FRighthand" coords="157,93,152,127,177,234,192,231,196,217,179,201,175,167,170,151,168,103" shape="poly">
+        <area target="" alt="BHead" title="BHead" id="BHead" coords="307,53,25" shape="circle">
+        <area target="" alt="BNeck" title="BNeck" id="BNeck" coords="291,78,325,90" shape="rect">
+        <area target="" alt="BBody" title="BBody" id="BBody" coords="267,91,346,91,333,128,331,156,337,186,273,184,278,151,275,123" shape="poly">
+        <area target="" alt="BInguinal" title="BInguinal" id="BInguinal" coords="273,185,336,187,341,220,269,217" shape="poly">
+        <area target="" alt="BFeet" title="BFeet" id="BFeet" coords="269,218,271,268,266,307,271,339,259,377,280,383,329,381,351,378,341,346,343,301,339,268,341,221" shape="poly">
+        <area target="" alt="BLefthand" title="BLefthand" id="BLefthand" coords="266,91,258,105,256,154,248,179,246,202,228,219,235,235,249,234,253,207,262,174,275,128" shape="poly">
+        <area target="" alt="BRighthand" title="BRighthand" id="BRighthand" coords="346,94,351,106,353,152,361,169,366,201,382,219,374,236,359,234,355,199,345,160,335,126" shape="poly">
+    </map>
+
+</body>
+</html>
